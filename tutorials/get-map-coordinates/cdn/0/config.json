@@ -59,13 +59,14 @@
         "1": {
           "type": "WIDGET",
           "bbox": {
-            "left": "0px",
-            "width": "3px",
-            "height": "398px"
+            "left": 0,
+            "width": 3,
+            "height": "458px"
           },
-          "widgetId": "widget_3",
+          "widgetId": "widget_4",
           "setting": {
-            "heightMode": "fit"
+            "heightMode": "fit",
+            "maintainedByLayout": true
           }
         }
       }
@@ -73,6 +74,47 @@
     "layout_2": {
       "type": "FIXED",
       "label": "Map FixedLayout"
+    },
+    "layout_3": {
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0px",
+            "right": "318px",
+            "top": "0px",
+            "bottom": "40px",
+            "width": "318px",
+            "height": "40px"
+          },
+          "widgetId": "widget_5",
+          "setting": {
+            "autoProps": {
+              "height": "AUTO"
+            }
+          }
+        },
+        "1": {
+          "widgetId": "widget_3",
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "width": 3,
+            "height": "398px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO"
+            }
+          }
+        }
+      }
     }
   },
   "exbVersion": "1.4.0",
@@ -157,6 +199,44 @@
       "useMapWidgetIds": [
         "widget_2"
       ]
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "uri": "widgets/layout/column/",
+      "version": "1.4.0",
+      "label": "Column 1",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_5": {
+      "uri": "widgets/common/text/",
+      "version": "1.4.0",
+      "label": "Text 1",
+      "config": {
+        "text": "<p><span style=\"font-size: 24px;\">Get Map Coordinates</span></p>",
+        "placeholder": "Double click to edit text",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true
+        }
+      },
+      "id": "widget_5"
     }
   },
   "widgetsManifest": {},
@@ -177,5 +257,5 @@
       "page_0": []
     }
   ],
-  "timestamp": 1621041256151
+  "timestamp": 1621042970339
 }

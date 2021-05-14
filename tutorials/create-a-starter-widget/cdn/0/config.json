@@ -1,0 +1,178 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "AUTO_SCROLL",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page 1"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FLOW",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "348px",
+            "right": "748px",
+            "top": "0px",
+            "bottom": "400px",
+            "width": "400px",
+            "height": 420
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "heightMode": "fixed"
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "1",
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 3,
+            "width": 9,
+            "height": "400px"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "heightMode": "fit"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0px",
+            "width": "3px",
+            "height": "398px"
+          },
+          "widgetId": "widget_3",
+          "setting": {
+            "heightMode": "fit"
+          }
+        }
+      }
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.4.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankscrollable",
+  "attributes": {
+    "portalUrl": "https://arcgis.com",
+    "clientId": "",
+    "title": "Starter Widget",
+    "description": ""
+  },
+  "customTheme": {
+    "sharedThemeVariables": {
+      "header": {},
+      "body": {},
+      "button": {},
+      "logo": {
+        "small": null,
+        "link": null
+      }
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/row/",
+      "version": "1.4.0",
+      "label": "Block 1",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_1"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.4.0",
+      "label": "Map 1",
+      "config": {
+        "toolConifg": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_2",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_2"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_3": {
+      "uri": "widgets/starter-widget/",
+      "version": "1.4.0",
+      "label": "starter-widget 1",
+      "config": null,
+      "id": "widget_3"
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_MAP",
+      "itemId": "eb1be6543e304b4d81ed55439c412c2c",
+      "id": "dataSource_1",
+      "portalUrl": "https://arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1621038571527
+}
